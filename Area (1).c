@@ -1,37 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
-
+    int main(void)
 {
+    float base, altura, area, perimetro;
 
 
-float x, y, z, media;
-    printf("Digite o primeiro resultado:\n");
-        scanf("%f",&x);
-    printf("Digite o segundo resultado:\n");
-        scanf("%f",&y);
-    printf("Digite o terceiro resultado:\n");
-        scanf("%f",&z);
 
-    media = (x/2)+(y/3)+(z/5);
-    //media = (x+y+z)/10;
-    if (media < 6)
+    printf("Digite o valor da base de uma figura:\n");
+        scanf("%f", &base);
+
+    printf("Digite o valor da altura de uma figura:\n");
+        scanf("%f", &altura);
+
+        area = base*altura;
+        perimetro = (2*base) + (2*altura);
+
+    
+    if (base == altura)
     {
-        printf("Reprovado! Te vejo novamente no próximo semestre arrombado ¯|_(ツ)_|¯\n");
-    }
+        printf("Isso é um quadrado! :3\n\n");
+    }    
     else
     {
-        printf("Aprovado! Te vejo na formatura meu consagrado ( ͡~ ͜ʖ ͡°)  \n");
+        printf("Isso é um retângulo! :3\n\n");
     }
-               
-    printf("A média do aluno foi:%.1f\n", media);
+    
+    printf("Resultado da área:%.f m²\n", area);
+    printf("Resultado do perímetro:%.f m\n", perimetro);
 
+    
     return 0;
 }
-
-
-
 
 
 
